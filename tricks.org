@@ -1,16 +1,15 @@
-#+TITLE:/Tips and tricks/ para programação competitiva
+#+TITLE: /Tips and tricks/ para programação competitiva
+#+STARTUP: nofold
 
 Coleção de algumas anotações com informações úteis para resolução de problemas
 típicos de programação competitiva.
 
-* Conteúdos
-
-+ [[Boas práticas][Boas práticas]]
-+ [[Valores importantes]]
-+ [[Divisão por 0]]
-+ [[Limites numéricos]]
-+ [[C Strings]]
-
+* Índice :TOC:
+- [[#boas-práticas][Boas práticas]]
+- [[#valores-importantes][Valores importantes]]
+- [[#divisão-por-0][Divisão por 0]]
+- [[#limites-numéricos][Limites numéricos]]
+- [[#c-strings][C Strings]]
 
 * Boas práticas
 - Verificar primeiramente a complexidade do algoritmo proposto como solução.
@@ -68,5 +67,3 @@ fgets(str, MAX, stdin); // Lê a string do stdin e, se houver espaço, o caracte
 // Isso se dá pelo fato de que nesse caso, não há espaço para o caractere '\n' na string
 str[strlen(str)-1] = '\0';
 #+END_SRC
-
-#+RESULTS:
