@@ -1,0 +1,65 @@
+* /Tips and tricks/ para programação competitiva
+
++ [[Boas práticas][Boas práticas]]
++ [[Valores importantes]]
++ [[Divisão por 0]]
++ [[Limites numéricos]]
++ [[C Strings]]
+
+
+** Boas práticas
+- Verificar primeiramente a complexidade do algoritmo proposto como solução.
+  Soluções com complexidade alta muitas vezes precisam ser descartadas antes
+  perder tempo implementando.
+- Usar sempre os valores máximos fornecidos no enunciado. Especialmente útil
+  para criar vetores sem a necessidade de alocar memória dinamicamente.
+- Fazer casos de teste com valores conhecidos para averiguar a validade da
+  solução implementada.
+- Tentar identificar os /edge cases/ e testar a implementação contra eles.
+
+** Valores importantes
+-  Um inteiro de 32 bits consegue guardar valores de até (aproximadamente)
+  $2*10^9$.
+-  Um computador comum consegue seguramente fazer algo em torno de $10^8$
+  operações por segundo.
+
+
+
+
+** Divisão por 0
+Utilização da função *max()* da biblioteca *<algorithm>*
+
+#+BEGIN_SRC c++
+x = y / max(1, n);
+#+END_SRC
+
+Em caso de n igual a zero, a função *max()* retorna o maior valor 1, efetuando uma divisão por 1.
+ 
+** Limites numéricos
+Para obter os valores máximos e mínimos de uma variável, têm-se
+*numeric_limits<class T>* da biblioteca *<limits>*.
+
+#+BEGIN_SRC c++
+std::numeric_limits<int>::max();
+std::numeric_limits<int>::min();
+#+END_SRC
+
+** C Strings
+- Antes de ler uma string à moda da linguagem C, é preciso garantir que não
+  exista nada no buffer que possa atrapalhar:
+
+  #+BEGIN_SRC c++
+
+scanf("%d", &x); // Lê apenas o valor inteiro, o '\n' continua no buffer
+getchar(); // Lê e descarta o '\n' que estava no buffer
+scanf("%s", str); // Lê a string
+  #+END_SRC
+
+- Ler strings com *fgets()* inclui o '\n'. Normalmente é preciso removê-lo:
+
+  #+BEGIN_SRC c++
+fgets(str, MAX, stdin); // Lê a string do stdin e, se houver espaço, o caractere '\n' será inserido ao final
+// IMPORTANTE: O método a seguir pode remover informação relevante se o tamanho da string for equivalente a MAX
+// Isso se dá pelo fato de que nesse caso, não há espaço para o caractere '\n' na string
+str[strlen(str)-1] = '\0';
+  #+END_SRC

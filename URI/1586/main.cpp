@@ -11,7 +11,7 @@ char v[MAX][MAX_NOME];
 int forca (int i) {
     int x = 0;
 
-    for (auto& it : string(v[i]))
+    for (auto& it : v[i])
         x += it;
 
     return x;
@@ -21,16 +21,15 @@ int forca_grupo(int inicio, int fim, int cur) {
     int fg = 0;
     int acc = 1;
 
-    if (cur > inicio) {
-        while (cur >= 0) {
+    if (cur == fim) {
+        while (cur >= inicio) {
             fg += f[cur] * acc;
             cur--;
             acc++;
         }
     }
-
     else {
-        while (cur < fim) {
+        while (cur <= fim) {
             fg += f[cur] * acc;
             cur++;
             acc++;
@@ -43,7 +42,7 @@ int forca_grupo(int inicio, int fim, int cur) {
 
 
 int main(int argc, char *argv[]) {
-    int n;
+    int n, inf, sup, d, fa, fb;
 
     while (scanf("%d", &n), n != 0) {
 
@@ -54,14 +53,16 @@ int main(int argc, char *argv[]) {
             f[i] = forca(i);
         }
 
-        int inf = 0;
-        int sup = n;
+        n--;
+
+        inf = 0;
+        sup = n;
 
         while (sup - inf > 1) {
-            int d = (inf + sup) / 2;
+            d = (inf + sup) / 2;
 
-            int fa = forca_grupo(0, d, d);
-            int fb = forca_grupo(d+1, n, d+1);
+            fa = forca_grupo(0, d, d);
+            fb = forca_grupo(d+1, n, d+1);
 
             if (fa < fb)
                 inf = d;
