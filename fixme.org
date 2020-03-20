@@ -1,7 +1,6 @@
-#+TITLE: fixme
+#+TITLE: Exercícios parcialmente completos
 
-* FIXME - Exercícios parcialmente completos
-** URI
+* URI
 - [ ] 1210 \- Os cálculos aparentam funcionar mas ainda é preciso retornar a
   ordem
 - [ ] 1586 - Nem sempre o valor correto é encontrado. Possivelmente um erro na
