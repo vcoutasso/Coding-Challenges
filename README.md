@@ -6,6 +6,6 @@ Programação da UTFPR.
 
 ## Documentos
 
-* [Soluções incompletas](docs/fixme.org)
-* [Dicas para programação competitiva](docs/tricks.org)
 * [Treinos](docs/training.org)
+* [Dicas para programação competitiva](docs/tricks.org)
+* [Soluções incompletas](docs/fixme.org)
