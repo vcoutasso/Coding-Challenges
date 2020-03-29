@@ -1,14 +1,15 @@
 #+TITLE: Treinos
+#+STARTUP: nofold
 
 * Índice :TOC:
-- [[#wait-treino-1-1011][WAIT Treino 1]]
-- [[#strt-treino-2-610][STRT Treino 2]]
+- [[#treino-1][Treino 1]]
+- [[#treino-2][Treino 2]]
 
-* WAIT Treino 1 [10/11]
+* TODO Treino 1
 - [X] A: [[https://www.urionlinejudge.com.br/judge/problems/view/1581][URI 1581]]
 - [X] B: [[https://www.urionlinejudge.com.br/judge/problems/view/1583][URI 1583]]
 - [X] C: [[https://www.urionlinejudge.com.br/judge/problems/view/1585][URI 1585]]
-- [-] D: [[https://www.urionlinejudge.com.br/judge/problems/view/1586][URI 1586]]
+- [ ] D: [[https://www.urionlinejudge.com.br/judge/problems/view/1586][URI 1586]]
 - [X] E: [[https://www.urionlinejudge.com.br/judge/problems/view/1546][URI 1546]]
 - [X] F: [[https://www.urionlinejudge.com.br/judge/problems/view/1547][URI 1547]]
 - [X] G: [[https://www.urionlinejudge.com.br/judge/problems/view/1548][URI 1548]]
@@ -17,7 +18,7 @@
 - [X] J: [[https://www.urionlinejudge.com.br/judge/problems/view/1554][URI 1554]]
 - [X] K: [[https://www.urionlinejudge.com.br/judge/problems/view/1555][URI 1555]]
 
-* STRT Treino 2 [6/10]
+* TODO Treino 2
 - [X] A: [[https://www.urionlinejudge.com.br/judge/problems/view/2448][URI 2448]]
 - [X] B: [[https://www.urionlinejudge.com.br/judge/problems/view/2456][URI 2456]]
 - [X] C: [[https://www.urionlinejudge.com.br/judge/problems/view/2451][URI 2451]]
