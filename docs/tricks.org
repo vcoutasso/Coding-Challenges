@@ -10,6 +10,7 @@ típicos de programação competitiva.
 - [[#divisão-por-0][Divisão por 0]]
 - [[#limites-numéricos][Limites numéricos]]
 - [[#c-strings][C Strings]]
+- [[#ordenação][Ordenação]]
 
 * Boas práticas
 - Verificar primeiramente a complexidade do algoritmo proposto como solução.
@@ -66,4 +67,14 @@ fgets(str, MAX, stdin); // Lê a string do stdin e, se houver espaço, o caracte
 // IMPORTANTE: O método a seguir pode remover informação relevante se o tamanho da string for equivalente a MAX
 // Isso se dá pelo fato de que nesse caso, não há espaço para o caractere '\n' na string
 str[strlen(str)-1] = '\0';
+#+END_SRC
+
+
+* Ordenação
+Para realizar ordenações de algum objeto da STL, pode-se utilizar a função
+*sort()* da biblioteca *<algorithm>*
+
+#+BEGIN_SRC C++
+std::sort(v.begin(), v.end()) // Ordenação crescente
+std::sort(v.begin(), v.end(), std::greater<int>()) // Ordenação decrescente
 #+END_SRC
