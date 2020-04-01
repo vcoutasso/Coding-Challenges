@@ -11,6 +11,9 @@ típicos de programação competitiva.
 - [[#limites-numéricos][Limites numéricos]]
 - [[#c-strings][C Strings]]
 - [[#ordenação][Ordenação]]
+- [[#vetores][Vetores]]
+  - [[#criação-e-inicialização-de-vetores-dinamicamente][Criação e inicialização de vetores dinamicamente]]
+  - [[#criação-e-inicialização-de-vetores-estaticamente][Criação e inicialização de vetores estaticamente:]]
 
 * Boas práticas
 - Verificar primeiramente a complexidade do algoritmo proposto como solução.
@@ -78,3 +81,27 @@ Para realizar ordenações de algum objeto da STL, pode-se utilizar a função
 std::sort(v.begin(), v.end()) // Ordenação crescente
 std::sort(v.begin(), v.end(), std::greater<int>()) // Ordenação decrescente
 #+END_SRC
+
+* Vetores
+** Criação e inicialização de vetores dinamicamente
+Caso comum, reservando memória sem alterá-la:
+
+#+begin_src c++
+int arr = (int*) malloc(N * sizeof(int));
+#+end_src
+
+
+Inicializar um vetor zerado:
+
+#+begin_src c++
+int arr = (int*) calloc(N, sizeof(int));
+#+end_src
+
+** Criação e inicialização de vetores estaticamente:
+
+Não é necessário inicializar todas as posições individualmente. Pode-se fazer:
+
+#+begin_src c++
+int arr[N] = {0}; // Cria um array zerado.
+memset(arr, 0, N); // Zera todas as posições do array.
+#+end_src

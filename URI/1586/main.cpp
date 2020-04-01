@@ -53,8 +53,6 @@ int main(int argc, char *argv[]) {
             f[i] = forca(i);
         }
 
-        n--;
-
         inf = 0;
         sup = n;
 
