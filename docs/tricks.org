@@ -13,7 +13,15 @@ típicos de programação competitiva.
 - [[#ordenação][Ordenação]]
 - [[#vetores][Vetores]]
   - [[#criação-e-inicialização-de-vetores-dinamicamente][Criação e inicialização de vetores dinamicamente]]
-  - [[#criação-e-inicialização-de-vetores-estaticamente][Criação e inicialização de vetores estaticamente:]]
+  - [[#criação-e-inicialização-de-vetores-estaticamente][Criação e inicialização de vetores estaticamente]]
+- [[#entrada-e-saída][Entrada e saída]]
+  - [[#arquivos][Arquivos]]
+- [[#funções-úteis][Funções úteis]]
+  - [[#binary_search][binary_search()]]
+  - [[#find][find()]]
+  - [[#distance][distance()]]
+  - [[#reverse][reverse()]]
+  - [[#begin-e-end][begin() e end()]]
 
 * Boas práticas
 - Verificar primeiramente a complexidade do algoritmo proposto como solução.
@@ -97,7 +105,7 @@ Inicializar um vetor zerado:
 int arr = (int*) calloc(N, sizeof(int));
 #+end_src
 
-** Criação e inicialização de vetores estaticamente:
+** Criação e inicialização de vetores estaticamente
 
 Não é necessário inicializar todas as posições individualmente. Pode-se fazer:
 
@@ -105,3 +113,26 @@ Não é necessário inicializar todas as posições individualmente. Pode-se faz
 int arr[N] = {0}; // Cria um array zerado.
 memset(arr, 0, N); // Zera todas as posições do array.
 #+end_src
+
+* Entrada e saída
+** Arquivos
+Para ler de e escrever para arquivos ao invés de /stdin/ , /stdout/ e /stderr/, têm-se:
+
+#+begin_src c++
+freopen("input.txt", "r", stdin);
+freopen("output.txt", "w", stdout);
+freopen("error.log", "w", stderr);
+#+end_src
+
+* Funções úteis
+** binary_search()
+Retorna true se encontrar o valor no container e falso caso contrário. A implementação não retorna a posição do elemento, apenas indica se ele existe no range
+ou não.
+** find()
+Retorna um iterador para o primeiro elemento encontrado com valor correspondente dentro do intervalo.
+** distance()
+Comumente usado em conjunto com *find()*. Retorna a distância entre dois iteradores. Útil para descobrir o índice de um elemento a partir de seu iterador.
+** reverse()
+Inverte a ordem dos elementos de um container.
+** begin() e end()
+Retorna um iterador para cada posição do container e/ou vetor. Especialmente útil para permitir a utilização das funções citadas acima em arrays comuns (C).
