@@ -5,9 +5,11 @@
 - [[#treino-1][Treino 1]]
 - [[#treino-2][Treino 2]]
 - [[#treino-3][Treino 3]]
-- [[#in-progress-treino-4][IN-PROGRESS Treino 4]]
+- [[#treino-4][Treino 4]]
+- [[#treino-5][Treino 5]]
+- [[#treino-6][Treino 6]]
 
-* DONE Treino 1
+* TODO Treino 1
 - [X] A: [[https://www.urionlinejudge.com.br/judge/problems/view/1581][URI 1581]]
 - [X] B: [[https://www.urionlinejudge.com.br/judge/problems/view/1583][URI 1583]]
 - [X] C: [[https://www.urionlinejudge.com.br/judge/problems/view/1585][URI 1585]]
@@ -20,7 +22,7 @@
 - [X] J: [[https://www.urionlinejudge.com.br/judge/problems/view/1554][URI 1554]]
 - [X] K: [[https://www.urionlinejudge.com.br/judge/problems/view/1555][URI 1555]]
 
-* DONE Treino 2
+* TODO Treino 2
 - [X] A: [[https://www.urionlinejudge.com.br/judge/problems/view/2448][URI 2448]]
 - [X] B: [[https://www.urionlinejudge.com.br/judge/problems/view/2456][URI 2456]]
 - [X] C: [[https://www.urionlinejudge.com.br/judge/problems/view/2451][URI 2451]]
@@ -32,7 +34,7 @@
 - [X] I: [[https://www.urionlinejudge.com.br/judge/problems/view/1512][URI 1512]]
 - [ ] J: [[https://www.urionlinejudge.com.br/judge/problems/view/1517][URI 1517]]
 
-* DONE Treino 3
+* TODO Treino 3
 - [X] A: [[https://codeforces.com/problemset/problem/1331/B][CF 1331B]]
 - [ ] B: [[https://codeforces.com/problemset/problem/1331/C][CF 1331C]]
 - [X] C: [[https://codeforces.com/problemset/problem/1331/D][CF 1331D]]
@@ -40,7 +42,7 @@
 - [ ] E: [[https://codeforces.com/problemset/problem/1331/F][CF 1331F]]
 - [ ] F: [[https://codeforces.com/problemset/problem/1331/G][CF 1331G]]
 
-* IN-PROGRESS Treino 4
+* TODO Treino 4
 - [X] A: [[https://www.urionlinejudge.com.br/judge/problems/view/2061][URI 2061]]
 - [X] B: [[https://www.urionlinejudge.com.br/judge/problems/view/2057][URI 2057]]
 - [X] C: [[https://www.urionlinejudge.com.br/judge/problems/view/2059][URI 2059]]
@@ -50,3 +52,24 @@
 - [ ] G: [[https://codeforces.com/contest/1329/problem/A][CF 1329A]]
 - [-] H: [[https://codeforces.com/contest/1329/problem/B][CF 1329B]]
 - [ ] I: [[https://codeforces.com/contest/1329/problem/C][CF 1329C]]
+
+* TODO Treino 5
+- [X] A: [[https://www.urionlinejudge.com.br/judge/problems/view/1961][URI 1961]]
+- [X] B: [[https://onlinejudge.org/external/130/13018.pdf][UVA 13018]]
+- [ ] C: [[https://www.urionlinejudge.com.br/judge/problems/view/1912][URI 1912]]
+- [ ] D: [[https://onlinejudge.org/external/116/11610.pdf][UVA 11610]]
+- [ ] E: [[https://www.spoj.com/problems/KOPC12A/][SPOJ KOPC12A]]
+- [ ] F: [[https://www.urionlinejudge.com.br/judge/problems/view/1202][URI 1202]]
+- [ ] G: [[https://www.urionlinejudge.com.br/judge/problems/view/1206][URI 1206]]
+- [ ] H: [[https://codeforces.com/problemset/problem/112/A][CF 112A]]
+- [ ] I: [[https://codeforces.com/problemset/problem/112/B][CF 112B]]
+
+* TODO Treino 6
+- [X] A: [[https://www.urionlinejudge.com.br/judge/problems/view/2906][URI 2906]]
+- [ ] B: [[https://www.urionlinejudge.com.br/judge/problems/view/2903][URI 2903]]
+- [ ] C: [[https://www.urionlinejudge.com.br/judge/problems/view/2879][URI 2879]]
+- [ ] D: [[https://www.urionlinejudge.com.br/judge/problems/view/2884][URI 2884]]
+- [ ] E: [[https://www.urionlinejudge.com.br/judge/problems/view/1494][URI 1494]]
+- [ ] F: [[https://www.urionlinejudge.com.br/judge/problems/view/1203][URI 1203]]
+- [ ] G: [[https://www.urionlinejudge.com.br/judge/problems/view/1475][URI 1475]]
+- [ ] H: [[https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=1072][UVA 10131]]
