@@ -124,6 +124,13 @@ freopen("output.txt", "w", stdout);
 freopen("error.log", "w", stderr);
 #+end_src
 
+** Leitura de char e string
+Para evitar problemas com a leitura de tabulações/espaços e '\n' indesejados, pode-se usar um espaço no scanf:
+
+#+begin_src c++
+scanf(" %c", &ch);
+#+end_src
+
 * Funções úteis
 ** binary_search()
 Retorna true se encontrar o valor no container e falso caso contrário. A implementação não retorna a posição do elemento, apenas indica se ele existe no range
