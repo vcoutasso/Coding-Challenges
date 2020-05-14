@@ -1,7 +1,9 @@
 #+TITLE: Exercícios parcialmente resolvidos
 
 ** URI
-- [ ] 1210 \- Os cálculos aparentam funcionar mas ainda é preciso retornar a
+- 1210 - Os cálculos aparentam funcionar mas ainda é preciso retornar a
   ordem
-- [ ] 1586 - Nem sempre o valor correto é encontrado. Possivelmente um erro na
-  busca binária
+- 1475 - Falhamos miseravelmente nesse.
+
+** UVa
+- 10114

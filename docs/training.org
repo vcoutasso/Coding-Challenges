@@ -9,11 +9,12 @@
 - [[#treino-5][Treino 5]]
 - [[#treino-6][Treino 6]]
 
-* TODO Treino 1
+* DONE Treino 1
+CLOSED: [2020-05-14 qui 20:11]
 - [X] A: [[https://www.urionlinejudge.com.br/judge/problems/view/1581][URI 1581]]
 - [X] B: [[https://www.urionlinejudge.com.br/judge/problems/view/1583][URI 1583]]
 - [X] C: [[https://www.urionlinejudge.com.br/judge/problems/view/1585][URI 1585]]
-- [-] D: [[https://www.urionlinejudge.com.br/judge/problems/view/1586][URI 1586]]
+- [X] D: [[https://www.urionlinejudge.com.br/judge/problems/view/1586][URI 1586]]
 - [X] E: [[https://www.urionlinejudge.com.br/judge/problems/view/1546][URI 1546]]
 - [X] F: [[https://www.urionlinejudge.com.br/judge/problems/view/1547][URI 1547]]
 - [X] G: [[https://www.urionlinejudge.com.br/judge/problems/view/1548][URI 1548]]
@@ -67,7 +68,7 @@
 * TODO Treino 6
 - [X] A: [[https://www.urionlinejudge.com.br/judge/problems/view/2906][URI 2906]]
 - [ ] B: [[https://www.urionlinejudge.com.br/judge/problems/view/2903][URI 2903]]
-- [ ] C: [[https://www.urionlinejudge.com.br/judge/problems/view/2879][URI 2879]]
+- [X] C: [[https://www.urionlinejudge.com.br/judge/problems/view/2879][URI 2879]]
 - [ ] D: [[https://www.urionlinejudge.com.br/judge/problems/view/2884][URI 2884]]
 - [ ] E: [[https://www.urionlinejudge.com.br/judge/problems/view/1494][URI 1494]]
 - [ ] F: [[https://www.urionlinejudge.com.br/judge/problems/view/1203][URI 1203]]
