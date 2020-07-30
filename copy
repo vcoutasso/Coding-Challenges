@@ -1,8 +1,0 @@
-#!/bin/bash
-
-path=$1
-dir=$2
-
-filename=$(echo $dir | awk -F '/' '{print tolower($1)$2"-script_kiddies.cpp"}')
-
-cp "$dir/main.cpp" "$path/$filename"

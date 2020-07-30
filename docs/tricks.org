@@ -16,8 +16,11 @@ típicos de programação competitiva.
   - [[#criação-e-inicialização-de-vetores-estaticamente][Criação e inicialização de vetores estaticamente]]
 - [[#entrada-e-saída][Entrada e saída]]
   - [[#arquivos][Arquivos]]
+  - [[#leitura-de-char-e-string][Leitura de char e string]]
 - [[#funções-úteis][Funções úteis]]
   - [[#binary_search][binary_search()]]
+  - [[#lower_bound][lower_bound()]]
+  - [[#upper_bound][upper_bound()]]
   - [[#find][find()]]
   - [[#distance][distance()]]
   - [[#reverse][reverse()]]
@@ -135,6 +138,10 @@ scanf(" %c", &ch);
 ** binary_search()
 Retorna true se encontrar o valor no container e falso caso contrário. A implementação não retorna a posição do elemento, apenas indica se ele existe no range
 ou não.
+** lower_bound()
+Retorna um iterador para o primeiro elemento maior ou igual /val/. Se o elemento existe no container, isso é efetivamente uma maneira de encontrar seu índice rapidamente
+** upper_bound()
+Parecido com lower_bound(), mas retorna um iterador para o primeiro elemento *maior* que /val/.
 ** find()
 Retorna um iterador para o primeiro elemento encontrado com valor correspondente dentro do intervalo.
 ** distance()
