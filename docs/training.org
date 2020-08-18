@@ -8,6 +8,9 @@
 - [[#treino-4][Treino 4]]
 - [[#treino-5][Treino 5]]
 - [[#treino-6][Treino 6]]
+- [[#treino-7][Treino 7]]
+- [[#treino-8][Treino 8]]
+- [[#treino-9][Treino 9]]
 
 * DONE Treino 1
 CLOSED: [2020-05-14 qui 20:11]
@@ -74,3 +77,29 @@ CLOSED: [2020-05-14 qui 20:11]
 - [ ] F: [[https://www.urionlinejudge.com.br/judge/problems/view/1203][URI 1203]]
 - [ ] G: [[https://www.urionlinejudge.com.br/judge/problems/view/1475][URI 1475]]
 - [ ] H: [[https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=1072][UVA 10131]]
+- [ ] I: [[https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=467][UVA 526]]
+
+* TODO Treino 7
+- [ ] A: [[https://www.urionlinejudge.com.br/judge/problems/view/1955][URI 1955]]
+- [ ] B: [[https://www.urionlinejudge.com.br/judge/problems/view/1908][URI 1908]]
+- [ ] C: [[https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=1088][UVA 10147]]
+- [ ] D: [[https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1541][UVA 10600]]
+- [ ] E: [[https://www.urionlinejudge.com.br/judge/problems/view/1128][URI 1128]]
+- [ ] F: [[https://www.urionlinejudge.com.br/judge/problems/view/1850][URI 1850]]
+
+* TODO Treino 8
+- [ ] A: [[https://www.urionlinejudge.com.br/judge/problems/view/1850][URI 1850]]
+- [ ] B: [[https://www.urionlinejudge.com.br/judge/problems/view/1402][URI 1402]]
+- [ ] C: [[https://www.urionlinejudge.com.br/judge/problems/view/1391][URI 1391]]
+- [ ] D: [[https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=761][UVA 820]]
+- [ ] E: [[https://codeforces.com/contest/715/problem/B][CF 715B]]
+- [ ] F: [[https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=1535][UVA 10594]]
+- [ ] G: [[https://www.urionlinejudge.com.br/judge/problems/view/2257][URI 2257]]
+
+* TODO Treino 9
+- [ ] A: [[https://www.urionlinejudge.com.br/judge/problems/view/1047][URI 1047]]
+- [ ] B: [[https://www.urionlinejudge.com.br/judge/problems/view/2013][URI 2013]]
+- [ ] C: [[https://www.urionlinejudge.com.br/judge/problems/view/2014][URI 2014]]
+- [ ] D: [[https://www.urionlinejudge.com.br/judge/problems/view/1880][URI 1880]]
+- [ ] E: [[https://www.urionlinejudge.com.br/judge/problems/view/1883][URI 1883]]
+- [ ] F: [[https://www.urionlinejudge.com.br/judge/problems/view/1879][URI 1879]]

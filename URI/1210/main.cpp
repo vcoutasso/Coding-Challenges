@@ -1,106 +1,62 @@
 #include <bits/stdc++.h>
 
+#define MAX 2123
+
 using namespace std;
 
-//  How many years
 int N;
-// Initial dist age
 int I;
-// Max years
 int M;
-// Price new
 int P;
-// Maintenance cost
-vector<int> Ci;
-// Price sell used
-vector<int> Vi;
+int Ci[MAX];
+int Vi[MAX];
 
-stack<int> troca;
-stack<int> troca2;
+int memo[MAX][MAX];
+int nxt[MAX][MAX];
 
+int dp(int t, int age) {
+  int ch1, ch2 = numeric_limits<int>::max();
+  if (t == N + 1) return 0;
+  if (memo[t][age] != -1) return memo[t][age];
 
-int fn(int ano, int age, bool sell, int sum) {
-  int aux;
-  int aux2;
+  ch1  = Ci[0] + P - Vi[age] + dp(t + 1, 1);
 
+  if (age < M) ch2  = Ci[age] + dp(t + 1, age + 1);
 
-  if (sell || age == M) {
-    sum += P;
-    sum += Ci[0];
-    sum -= Vi[age-1];
-    age = 0;
-    troca.push(ano);
-  }
-  else
-      sum += Ci[age];
+  nxt[t][age] = ch1 <= ch2 ? 1 : age + 1;
 
-  if (ano < N) {
-      aux = fn(ano+1, age+1, false, sum);
-      aux2 = fn(ano+1, age+1, true, sum);
-      if (aux < aux2) {
-          if (ano <= int(troca.size()))
-              troca.pop();
-          return aux;
-      }
-      else
-          return aux2;
-      ///return aux < aux2 ? aux : aux2;
-  }
-  else
-      return sum;
-
+  return memo[t][age] = min(ch1, ch2);
 }
-
-int f(int ano, int age) {
-    int aux;
-    int aux2;
-
-    aux = fn(ano, age, false, 0);
-
-    troca2 = troca;
-    while (!troca.empty())
-        troca.pop();
-
-    aux2 = fn(ano, age, true, 0);
-
-    if (aux < aux2)
-        troca = troca2;
-
-    return aux < aux2 ? aux : aux2;
-}
-
 
 int main() {
 
-    int n;
-    int sum;
+  int t, age, first;
 
-    while (scanf("%d %d %d %d", &N, &I, &M, &P) != EOF) {
+  while (scanf("%d %d %d %d", &N, &I, &M, &P) != EOF) {
 
-        for (int i = 0; i < M; i++) {
-            scanf("%d", &n);
-            Ci.push_back(n);
-        }
+    for (int i = 0; i <= M - 1; i++) scanf("%d", &Ci[i]);
+    for (int i = 1; i <= M; i++) scanf("%d", &Vi[i]);
 
-        for (int i = 0; i < M; i++) {
-            scanf("%d", &n);
-            Vi.push_back(n);
-        }
+    memset(memo, -1, sizeof(memo));
+    printf("%d\n", dp(1, I));
 
-        sum = f(1, I);
-        printf("%d\n", sum);
+    t = 1;
+    first = 1;
+    age = I;
 
-        while (!troca.empty()) {
-            printf("%d ", troca.top());
-            troca.pop();
-        }
+    do {
+      if (nxt[t][age] == 1) {
+        if (!first) printf(" ");
+        printf("%d", t);
+        first = 0;
+      }
 
-        printf("\n");
+      age = nxt[t++][age];
+    } while (t <= N);
 
-        Ci.clear();
-        Vi.clear();
+    printf("%s\n", first ? "0" : "");
 
-    }
+  }
 
-    return 0;
+  return 0;
 }
